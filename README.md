@@ -1,2 +1,2 @@
 # public_rep
-public_repo
+This is a story of a public repo
