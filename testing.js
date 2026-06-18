@@ -1,5 +1,5 @@
 export function getCPUBucket() {
-  if (!('hardwareConcurrency' in navigator)) return 'unknown'
+  if (!(hardwareConcurrency in navigator)) return 'unknown'
 
   const concurrency = navigator.hardwareConcurrency
 
