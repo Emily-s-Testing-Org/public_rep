@@ -1,4 +1,4 @@
-export const calculate = (a, b) => {
+export const add = (a, b) => {
     if (!a || !b) {
         throw new Error('Values cannot be null or zero');
     }
