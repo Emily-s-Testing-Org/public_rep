@@ -5,6 +5,6 @@ class Ruby
     end
 
     def dequeue_request_pull_request_reviewers_job(actor: user)
-        StopPullRequestReviewersJob.perform_later(self, actor)
+        StopPullRequeJob.perform_later(self, actor)
     end
 end
