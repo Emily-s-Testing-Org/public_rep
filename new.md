@@ -1,4 +1,4 @@
 this is a new file
-whaha
+whale
 testing!
 testin!
