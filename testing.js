@@ -3,7 +3,7 @@ export function getCPUBucket() {
 
   const concurrency = navigator.hardwareConcurrency
 
-  for (const [bucket, min] of Object.entries(BUCKETS)) {
+  for (const [bucket, min] of Object.entries(CPU_BUCKETS)) {
     if (concurrency > min) {
       return bucket
     }
