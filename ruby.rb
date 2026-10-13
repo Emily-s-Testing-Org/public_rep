@@ -5,6 +5,7 @@ def enqueue_request_pull_request_reviewers_job(actor: user, should_re_request_re
 end
 
 def dequeue_request_pull_request_reviewers_job(actor: user)
-    StopPullRequestReviewersJob.perform_later(self, actor)
+    DequeuePullRequestReviewersJob.perform_later(self, actor)
 end
+
 end
