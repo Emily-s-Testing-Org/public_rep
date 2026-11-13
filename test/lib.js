@@ -3,7 +3,7 @@ import * as assert from 'assert'
 
 describe('lib', () => {
   describe('#calculate', () => {
-    it('two numbers', () => {
+    it('adds two numbers', () => {
       assert.equal(calculate(1, 1), 2);
     });
 
