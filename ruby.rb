@@ -8,4 +8,9 @@ def dequeue_request_pull_request_reviewers_job(actor: user)
     DequeuePullRequestReviewersJob.perform_later(self, actor)
 end
 
+
+    def requeue_request_pull_request_reviewers_job(actor: user)
+    RequeuePullRequestReviewersJob.perform_later(self, actor)
+end
+
 end
